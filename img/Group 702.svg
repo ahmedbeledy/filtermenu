@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="21" viewBox="0 0 62 21">
+    <defs>
+        <style>
+            .cls-4{font-family:SFProDisplay-Regular,SF Pro Display;fill:#a5c5be;font-size:18px;letter-spacing:.01em}
+        </style>
+    </defs>
+    <g id="Group_702" transform="translate(-338.763 -1084.547)">
+        <g id="Group_638" transform="translate(-3519.815 701.272)">
+            <g id="Group_605" transform="translate(3887.041 388.49)">
+                <text id="_3_750" fill="#fff" font-family="SFProDisplay-Regular, SF Pro Display" font-size="12px" transform="translate(-4 11)">
+                    <tspan x="0" y="0">3,750</tspan>
+                </text>
+            </g>
+            <g id="Group_611" transform="translate(3866.246 385.228)">
+                <g id="Group_606">
+                    <path id="Path_354" fill="#fff" d="M3873.577 396.146a4.47 4.47 0 1 0-4.471-4.47 4.482 4.482 0 0 0 4.471 4.47z" transform="translate(-3865.87 -387.206)"/>
+                    <path id="Path_355" fill="#c9dad6" d="M3882.624 396.369a5.2 5.2 0 0 0-.449-.969 5.538 5.538 0 0 0-3.846-2.856.727.727 0 0 0-.565.162 4.192 4.192 0 0 1-5.621 0 .646.646 0 0 0-.567-.162 5.5 5.5 0 0 0-3.844 2.856 6.005 6.005 0 0 0-.448.969.557.557 0 0 0 .019.437 9.43 9.43 0 0 0 .527.922 8.376 8.376 0 0 0 .9 1.2 12.718 12.718 0 0 0 .9.922 7.835 7.835 0 0 0 10.619 0 9.266 9.266 0 0 0 .9-.922 10.053 10.053 0 0 0 .9-1.2 8.248 8.248 0 0 0 .526-.922.445.445 0 0 0 .049-.437z" opacity="0.82" transform="translate(-3867.246 -383.27)"/>
+                </g>
+            </g>
+        </g>
+        <g id="Group_701">
+            <text id="_" class="cls-4" transform="translate(341.763 1101.547)">
+                <tspan x="-2.9" y="0">(</tspan>
+            </text>
+            <text id="_2" class="cls-4" transform="matrix(-1 0 0 1 397.763 1101.547)">
+                <tspan x="-2.9" y="0">(</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
