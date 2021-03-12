@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="173.721" height="51.616" viewBox="0 0 173.721 51.616">
-    <g>
-        <path fill="none" stroke="#30a08b" d="M6.169 0h160.384c3.407 0 6.169 3.147 6.169 7.03v36.556c0 3.883-2.762 7.03-6.169 7.03H6.169C2.762 50.616 0 47.469 0 43.586V7.03C0 3.147 2.762 0 6.169 0z" transform="translate(-1390.266 -26.116) translate(1390.766 26.616)"/>
-        <text fill="#30a08b" font-family="Poppins-SemiBold, Poppins" font-size="19px" font-weight="600" transform="translate(-1390.266 -26.116) translate(1421.766 58.616)">
-            <tspan x="0" y="0">Get Started</tspan>
-        </text>
-    </g>
-</svg>

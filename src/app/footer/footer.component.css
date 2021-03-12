@@ -1,0 +1,27 @@
+.copyright{
+  display:inline;
+width: 375px;
+height: 19px;
+
+}
+.footer{
+  margin-top:900px;
+margin-left: 100px;
+  width: 1366px;
+  height: 19px; 
+  text-align: left;
+font: normal normal normal 16px/19px Roboto;
+letter-spacing: 0.32px;
+color: #000000;
+opacity: 0.4;
+}
+
+.social{
+    display:inline;
+
+  margin-left:100px
+  
+}
+img {
+  margin-left: 10px;
+}

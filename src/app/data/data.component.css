@@ -1,0 +1,128 @@
+.scroll{
+    display: inline-block;
+    position: relative;
+            width: 16px;
+        height:1057px;
+        background: white 0% 0% no-repeat padding-box;
+    margin-left: 721px; 
+    margin-top: -1059px;
+    
+    }
+
+    .backlog{
+        background:  url('../../assets/Images/Group1386.png')220px 0% no-repeat padding-box;
+    margin-top:-250px;
+    margin-left: 290px;
+        width: 554px;
+        height: 297px;
+    }
+.bar{
+
+    overflow-y: auto;
+overflow-x:hidden ;
+
+
+     width: 740px;
+     height:1040px;
+     background: #FFFFFF 0% 0% no-repeat padding-box;
+     box-shadow: 0px 0px 25px #00000029;
+     opacity: 1;
+   }
+  
+   .img{
+    margin: 24px;
+
+    min-width: 80px;
+    min-height: 80px;
+    box-shadow: 0px 0px 10px #00000029;
+
+            max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+   
+
+   
+   }
+   
+   .data{
+     
+   margin-top: 5%;
+   margin-left: 5%;
+   width: 580px;
+   height: 22px;
+   text-align: left;
+   font:18px medium , Roboto;
+   letter-spacing: 0.18px;
+   color: #222222;
+   opacity: 1;
+   }
+   .data2{
+   margin-top: .5%;
+   margin-left: 5%;
+   
+   width: 500px;
+   height: 22px;
+   text-align: left;
+   font:16px medium , Roboto;
+   letter-spacing: 0.14px;
+   color: #000000;
+   opacity: 0.6;
+   }
+   .money{
+     margin-top: 1%;
+   margin-left: 5%;
+   width: 570px;
+
+   
+   }
+   .fees{
+   
+   margin-top: 5px;
+   text-align: left;
+   font:14px medium , Roboto;
+   letter-spacing: 0.12px;
+   color: #000000;
+   text-transform: lowercase;
+   opacity: 0.4;
+   }
+   .price{
+    margin-top: 5px;
+    margin-left: 5px;
+
+   width: 118px;
+   height: 19px;
+   text-align: left;
+   font:14px medium , Roboto;
+   letter-spacing: 0.14px;
+   color: #283C8C;
+   opacity: 1;
+   }
+   .nan{
+    margin-top: 5px;
+margin-left: 30px;
+width: 37px;
+height: 19px;
+text-align: left;
+font:14px medium , Roboto;
+letter-spacing: 0.16px;
+color: #283C8C;
+opacity: 1;
+   }
+   .moreinfo{
+   margin-left: 200px;
+   width: 103px;
+   height: 34px;
+   background: #1C85C8 0% 0% no-repeat padding-box;
+   box-shadow: 0px 1px 10px #1C85C833;
+   border-radius: 5px;
+   opacity: 1;
+   
+   text-align: left;
+   font: normal normal medium 16px/19px Roboto;
+   letter-spacing: 0.32px;
+   color: #FFFFFF;
+   opacity: 1;
+   
+   }
+   
