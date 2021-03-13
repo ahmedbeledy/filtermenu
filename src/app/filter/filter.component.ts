@@ -1,8 +1,10 @@
+import { element } from 'protractor';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import data from './progs.json';
 import { FormControl } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { combineLatest } from 'rxjs';
 
 @Component({
   selector: 'app-filter',
@@ -12,7 +14,7 @@ import { NgModule } from '@angular/core';
 export class FilterComponent implements OnInit {
   toppings = new FormControl();
   encapsulation: ViewEncapsulation.None | undefined
-
+   temp:any;
   selectedToppings: any;
   valu: any
   arraycity: any
@@ -21,7 +23,7 @@ export class FilterComponent implements OnInit {
   savedschool: string[] = []
   arrayfield: any
   arrayschool: any
-  
+
   degree: string = ""
   language: string = ""
   Sort: string = ""
@@ -38,25 +40,35 @@ export class FilterComponent implements OnInit {
     this.arrayschool = this.valu.map((item: any) => item.school).filter((value: number, index: number, self: any) => self.indexOf(value) === index)
 
   }
-getdegr(degree:string){
-this.degree=degree
-
-}
-getlang(lang:string){
-  this.language=lang
-
-}
-  getsort(sort:string){
-
-    this.Sort=sort
-
-    }
-  filiterbycity(city: string) {
-
-    this.valu = data[2].data
-    this.valu = this.valu.filter((valu: any) => valu.city == city)
+  getdegr(degree: string) {
+    this.degree = degree
 
   }
+  getlang(lang: string) {
+    this.language = lang
+
+  }
+  getsort(sort: string) {
+
+    this.Sort = sort
+
+  }
+  cityfind(city:any){
+    this.valu = data[2].data
+
+    this.valu = this.valu.filter((item1:any) =>item1.city==city )
+
+  }
+  filiterbycity(city: any,type:string) {
+ 
+   this.valu = this.valu.filter((item1:any) => 
+
+      !!city.find((item2:any) => item1[type] === item2)
+   
+ );
+  }
+    
+  
   fieldcollect(field: string) {
     this.savedfield.push(field)
   }
@@ -85,31 +97,64 @@ getlang(lang:string){
     console.log(this.savedcitiy)
 
   }
-  filterdata(){
+  filterdata() {
     this.valu = data[2].data
-    if (this.degree!="")
-    this.valu = this.valu.filter((valu: any) => valu.level == this.degree)
-    if (this.language!="")
+   
 
-    this.valu = this.valu.filter((valu: any) => valu.Language == this.language)
+    this.valu.forEach((item:any)=>{
+      item.fee=item.fee.replace(",","")
+    })
 
-    this.savedcitiy.forEach(element => {
-      if (element!="")
-      this.valu = this.valu.filter((valu: any) => valu.city == element)
+      if (this.Sort === "low") {
 
-});
-this.savedschool.forEach(element => {
-  if (element!="")
-  this.valu = this.valu.filter((valu: any) => valu.school == element)
+          this.valu.sort((a:any, b:any) => (+(a.fee) > +(b.fee) ) ? 1 : -1)
 
-});
-this.savedfield.forEach(element => {
-  if (element!="")
-  this.valu = this.valu.filter((valu: any) => valu.type == element)
+      }
+      if(this.Sort ==="high"){
+        this.valu.sort((a:any, b:any) => (+(a.fee) > +(b.fee) ) ? -1 : 1)
 
-});
+        
+      }
+    
+    
+    
 
+      if (this.degree != "")
+        {this.valu = this.valu.filter((valu: any) => valu.level == this.degree)
+        }
 
+        if (this.language != "")
+       { this.valu = this.valu.filter((valu: any) => valu.Language == this.language)
+       }
+
+        if ( this.savedcitiy.length > 0)
+        {
+
+      this.filiterbycity(this.savedcitiy,'city')
+
+        
+        }
+        if ( this.savedfield.length > 0)
+        {
+
+      this.filiterbycity(this.savedfield,'type')
+
+        
+        }
+        if ( this.savedschool.length > 0)
+        {
+
+      this.filiterbycity(this.savedschool,'school')
+
+        
+        } 
+
+    
   }
-}
+     
+
+
+
+    }
+  
 

@@ -2,7 +2,7 @@
     <div class="search">
         <div class="searchbox">
             <input type="text" class="textlearn" value="What do you want to learn?">
-            <select class="compocity" #city (change)="filiterbycity(city.value)">
+            <select class="compocity" #cityd (change)="cityfind(cityd.value)" >
                 <option value="" selected="false">Write or choose city</option>
                 <option *ngFor="let item of this.arraycity" [value]="item">{{item}}</option>
 
@@ -58,12 +58,13 @@
 
 
                 <label class="label"> Field</label>
-                <select class="dropdowns" #valfield (change)="fieldcollect(valfield .value)">
+                <select class="dropdowns" #valfield (change)="fieldcollect(valfield.value)">
                     <option value="" selected="false">Choose one city or more </option>
 
                     <option *ngFor="let item of this.arrayfield" [value]="item">{{item}}</option>
                 </select>
-                <div class="temp" *ngFor="let item of this.savedfield"> {{item}} <img class="img"
+                <div class="temp" *ngFor="let item of this.savedfield"> {{item}} 
+                    <img class="img"
                     (click)="fielddelete(item)" src="../../assets/Images/Iconmaterial-close.png"> </div>
                     <div></div>
 
@@ -95,7 +96,7 @@
 
                 <p>
                     <label>
-                        <input (click)="getsort(low.value)" #low class="check" (click)="getdegr(low.value)" name="sort" type="radio" value="low">
+                        <input (click)="getsort(lowd.value)" #lowd class="check"  name="sort" type="radio" value="low">
                         <span class="checklabel">Price: low to high</span>
                     </label>
                 </p>
